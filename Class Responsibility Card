@@ -19,8 +19,7 @@ ATTRIBUTES:
 METHODS:
 1. def shuffle(deck)
    return unsorted/randomized deck
-2. def draw_card(deck)
-    return random card
+
 ________________________________________________
 
 GAME
@@ -36,12 +35,15 @@ has a deck of cards (sometimes more) (state/attribute)
 ATTRIBUTES:
 1. :Name
 2. :Deck of Cards (inherited)
-3. :Scoring 
-4. :Number of cards to start with
+3. :Number of cards to start with
 
 METHODS:
 1. def tally score(score)
-2. def new_round
+    return final score
+2. def new_round?
+    return boolean
+3. def scoring
+    return card values
 
 ___________________________________________________________
 
@@ -53,3 +55,12 @@ __________________________________________________________
 -can be dealt
 -can be shuffled
 -can have more than one value based on context and game rule
+
+ATTRIBUTES:
+1. Name
+
+METHODS:
+1. def draw_card(deck)
+   return random card
+2. def discard(card)
+    return hand without discarded card
