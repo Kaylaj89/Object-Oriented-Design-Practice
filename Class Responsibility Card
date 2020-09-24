@@ -18,17 +18,31 @@ ATTRIBUTES:
 
 METHODS:
 1. def shuffle(deck)
+   return unsorted/randomized deck
 2. def draw_card(deck)
+    return random card
 ________________________________________________
 
 GAME
 _________________________________________________________
--has a deck of cards (sometimes more) (state/attribute)
+-has a name
+has a deck of cards (sometimes more) (state/attribute)
 -has a scoring guide
 -has at least 1 round of play
 -includes drawing/shuffling/discard methods
 -rules about the number of cards each person holds in their hand
 -rules about how someone wins or loses
+
+ATTRIBUTES:
+1. :Name
+2. :Deck of Cards (inherited)
+3. :Scoring 
+4. :Number of cards to start with
+
+METHODS:
+1. def tally score(score)
+2. def new_round
+
 ___________________________________________________________
 
 CARD
